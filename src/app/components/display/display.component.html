@@ -1,0 +1,39 @@
+<div class="app-display">
+  <div class="app-display_card">
+    <h3 class="app-display_title">Instructions:</h3>
+    <ul class="app-display_list">
+      <li>
+        <span><b>Grid Dimension:</b></span> <span>{{ dimension }}</span>
+      </li>
+      <li>
+        <span><b>Zombie Position:</b></span>
+        <span class="text-red">{{ zombiePosition }}</span>
+      </li>
+      <li>
+        <span><b>Creatures Positions:</b></span>
+        <span class="text-green">{{ creaturesPositions }}</span>
+      </li>
+      <li>
+        <span><b>Zombie Move Steps:</b></span>
+        <span>{{ zombieMoveSteps }}</span>
+      </li>
+    </ul>
+  </div>
+  <div class="app-display_arrow">&#8594;</div>
+  <div class="app-display_card">
+    <h3 class="app-display_title">Results:</h3>
+    <ul class="app-display_list">
+      <li>
+        <span><b>Zombies Score:</b></span> <span>{{ zombieScore }}</span>
+      </li>
+      <li>
+        <span><b>Zombies Positions:</b></span>
+        <span class="text-red">{{ zombiePositions }}</span>
+      </li>
+      <li>
+        <span><b>Survived Creatures Positions:</b></span>
+        <span class="text-green">{{ creaturesLeft }}</span>
+      </li>
+    </ul>
+  </div>
+</div>

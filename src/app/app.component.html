@@ -1,0 +1,16 @@
+<div class="app">
+  <h1>Zombie Demo</h1>
+
+  <!-- loading messages -->
+  <div class="app__loading-msg" *ngIf="!isRemoteLoaded">
+    <span *ngIf="!isRemoteDataLoadError">Loading instructions...</span>
+    <span *ngIf="isRemoteDataLoadError">Error loading instructions :(</span>
+  </div>
+
+  <!-- app display -->
+  <app-display
+    *ngIf="!isRemoteDataLoadError"
+    [results]="results"
+    [instructions]="instructions"
+  ></app-display>
+</div>

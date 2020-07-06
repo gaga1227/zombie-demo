@@ -1,0 +1,58 @@
+.app-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+
+    &_card {
+        flex: 1 1 50%;
+        background: white;
+        margin: 16px;
+        padding: 24px;
+        border-radius: 8px;
+    }
+
+    &_arrow {
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+        color: #aaa;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    &_title {
+        margin-top: 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #aaa;
+    }
+
+    &_list {
+        &, li {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            display: flex;
+            flex-flow: row nowrap;
+            margin: 8px auto;
+
+            span {
+                display: block;
+                flex: 1 1 50%;
+                margin: 0 4px;
+            }
+        }
+    }
+
+    .text-green {
+        color: #008800;
+    }
+
+    .text-red {
+        color: #C21F39;
+    }
+}
